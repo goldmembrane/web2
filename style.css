@@ -1,3 +1,123 @@
 * {
 	margin:0; padding:0;
 }
+ul,ol,li {
+	list-style:none;
+}
+#wrapper {}
+#header {
+	height:100px;
+	background-color:#000;
+}
+#header div {
+	width:1300px;
+	height:100px;
+	margin:0 auto;
+	position:relative;
+	background-color:skyblue;
+}
+#header .logo {
+	position:absolute;
+	left:0;
+	top:25px;
+}
+.infoLink {
+	width:200px;
+	position:absolute;
+	right:0;
+	top:20px;
+}
+.infoLink li {
+	float:left;
+	width:50px;
+}
+.infoLink li a {}
+.mainMenu {
+	width:325px;
+	position:absolute;
+	right:0;
+	top:45px;
+}
+.mainMenu li {
+	float:left;
+	width:65px;
+}
+.mainMenu li a {}
+#contentsArea {
+	background-color:#777;
+	height:590px;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+#contentsArea section {
+	background-color:#ddd;
+	height:250px;
+	margin-top:30px;
+	line-height:30px;
+	text-align:center;
+	position:relative;
+}
+#contentsArea section div {
+	width:1320px;
+	height:200px;
+	position:absolute;
+	left:300px;
+	top:50px;
+}
+#contentsArea section div article {
+	width:645px;
+	height:180px;
+	background-color:#fff;
+	margin-right:10px;
+	line-height:200px;
+	text-align:center;
+	float:left;
+}
+#footer {
+	height:100px;
+	background-color:#000;
+}
+#footerInner {
+	width:1300px;
+	height:100px;
+	margin:0 auto;
+	position:relative;
+	background-color:blue;
+}
+#footerInner .logo {
+	position:absolute;
+	left:0;
+	top:25px;
+	color:#fff;
+}
+.guide {
+	width:240px;
+	position:absolute;
+	left:200px;
+	top:20px;
+}
+.guide li {
+	float:left;
+	width:60px;
+}
+.guide li a {
+	color:#fff;
+}
+#footerInner address {
+	width:325px;
+	position:absolute;
+	left:180px;
+	top:45px;
+}
+#footerInner address span {
+	float:left;
+	width:65px;
+	color:#fff;
+	text-align:center;
+}
+.copyright {
+	font-size:5px;
+	position:absolute;
+	left:200px;
+	top:65px;
+}
