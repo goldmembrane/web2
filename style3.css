@@ -1,0 +1,18 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+div {
+	height:100px;
+	margin-bottom:10px;
+}
+body > div:first-child {
+	background-color:black;
+}
+div.color {
+	background-color:#000000;
+}
+body> div:last-child {
+	background-color:rgba(0,0,0,1);
+}

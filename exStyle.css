@@ -1,0 +1,14 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body > iframe:first-child {
+	width:700px;
+	height:500px;
+}
+body > iframe:nth-child(2) {
+	width:500px;
+	height:300px;
+	border:none;
+}
