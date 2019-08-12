@@ -13,34 +13,22 @@ ul,ol,li {
 	width:1300px;
 	height:100px;
 	margin:0 auto;
-	position:relative;
 	background-color:skyblue;
+	padding-top:25px;
 }
 #header .logo {
-	position:absolute;
-	left:0;
-	top:25px;
+	float: left;
 }
-.infoLink {
-	width:200px;
-	position:absolute;
-	right:0;
-	top:20px;
+header ul {
+	text-align: right;
 }
-.infoLink li {
-	float:left;
-	width:50px;
+.infoLink li  {
+	text-align: center;
+	display: inline-block;
 }
 .infoLink li a {}
-.mainMenu {
-	width:325px;
-	position:absolute;
-	right:0;
-	top:45px;
-}
 .mainMenu li {
-	float:left;
-	width:65px;
+	display: inline-block;
 }
 .mainMenu li a {}
 #contentsArea {
@@ -53,71 +41,63 @@ ul,ol,li {
 	background-color:#ddd;
 	height:250px;
 	margin-top:30px;
-	line-height:30px;
+	line-height:50px;
 	text-align:center;
-	position:relative;
 }
 #contentsArea section div {
 	width:1320px;
 	height:200px;
-	position:absolute;
-	left:300px;
-	top:50px;
+	margin:0 auto;
 }
 #contentsArea section div article {
-	width:645px;
+	width:640px;
 	height:180px;
 	background-color:#fff;
 	margin-right:10px;
-	line-height:200px;
+	margin-left:10px;
+	line-height:180px;
 	text-align:center;
 	float:left;
 }
 #footer {
-	height:100px;
+	height:125px;
 	background-color:#000;
+}
+#footer:after {
+	content:"";
+	clear:both;
+	display:block;
 }
 #footerInner {
 	width:1300px;
 	height:100px;
 	margin:0 auto;
-	position:relative;
 	background-color:blue;
+	padding-top:25px;
 }
 #footerInner .logo {
-	position:absolute;
-	left:0;
-	top:25px;
+	float:left;
 	color:#fff;
 }
-.guide {
-	width:240px;
-	position:absolute;
-	left:200px;
-	top:20px;
+footer ul {
+	text-align:left;
 }
 .guide li {
-	float:left;
-	width:60px;
+	text-align: center;
+	display: inline-block;
 }
 .guide li a {
 	color:#fff;
 }
 #footerInner address {
-	width:325px;
-	position:absolute;
-	left:180px;
-	top:45px;
+	color:#fff;
 }
 #footerInner address span {
-	float:left;
-	width:65px;
-	color:#fff;
-	text-align:center;
+	display: inline-block;
+	width:55px;
+	text-align:left;
 }
 .copyright {
 	font-size:5px;
-	position:absolute;
-	left:200px;
-	top:65px;
+	display: inline-block;
 }
