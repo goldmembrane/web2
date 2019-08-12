@@ -4,53 +4,76 @@
 	list-style:none;
 	text-decoration:none;
 }
-#container {
+#wrapper {
 	height:700px;
 	background-color:#000;
 }
-body > #container > #inner {
+body > #wrapper > #inner {
 	width:1300px;
 	height:700px;
 	margin:0 auto;
 	position:relative;
 }
-body > #container > #inner > iframe:first-child {
+body > #wrapper > #inner > iframe:first-child {
 	border:none;
 	width:1300px;
 	height:700px;
 	display:block;
 }
-body > #container > #inner > nav {
+body > #wrapper > #inner > nav {
 	position:absolute;
-	left:0;
-	top:0;
+	left:20px;
+	top:50px;
 }
-body > #container > #inner > nav > .menu {
+body > #wrapper > #inner > nav > .menu {
 	width:100px;
-	height:100px;
+	height:200px;
+	text-align:center;
+	border-bottom:1px solid #fff;
 }
-body > #container > #inner > nav > .menu > li {
+body > #wrapper > #inner > nav > .menu > li {
 	height:50px;
+	border-top:1px solid #fff;
 }
-body > #container > #inner > nav > .menu > li > a {
+body > #wrapper > #inner > nav > .menu > li > a {
 	color:#fff;
 	line-height:50px;
 }
-body > #container > #inner > #textBox {
+body > #wrapper > #inner > #textBox {
 	position:absolute;
 	right:0;
 	top:0;
-	width:400px;
+	width:350px;
 	height:700px;
 	background-color:rgba(0,0,0,0.4);
 }
-body > #container > #inner > #textBox > p {
+body > #wrapper > #inner > #textBox {
 	color:#fff;
-	
 }
-body > #container > #inner > #textBox > p:first-child {
+body > #wrapper > #inner > #textBox > #headBox {
+	width:310px;
+	height:100px;
+	margin:50px 20px;
+}
+body > #wrapper > #inner > #textBox > #headBox > p {
 	font-size:30px;
-	text-align:center;
 }
-body > #container > #inner > #textBox > p:last-child {
+body > #wrapper > #inner > #textBox > #contentsBox {
+	width:310px;
+	height:300px;
+}
+body > #wrapper > #inner > #textBox > #contentsBox > .contents {
+	margin:30px 20px;
+}
+body > #wrapper > #inner > #textBox > #contentsBox > .contents > p{
+	font-size:8px;
+}
+body > #wrapper > #inner > #textBox > a > #clickButton {
+	color:#fff;
+	width:310px;
+	height:50px;
+	margin:0 auto;
+	line-height:50px;
+	text-align:center;
+	background-color:rgba(255,0,0,0.6)
 }
