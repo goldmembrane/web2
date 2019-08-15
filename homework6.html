@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>homework6</title>
+	</head>
+	<body>
+		<h1>회원가입</h1>
+		<form>
+			<fieldset>
+				<legend><h3>정보입력</h3></legend>
+				<br>
+				<label for="uname">이름 :</label>
+				<input type="text" id="uname">
+				<br>
+				<label for="uID">아이디 :</label>
+				<input type="text" id="uID">
+				<input type="submit" value="중복확인">
+				<br>
+				<label for="uPwd">비밀번호 :</label>
+				<input type="text" id="uPwd">
+				<input type="submit" value="비밀번호확인">
+				<label><a href="#">비밀번호 도움말</a></label>
+				<br>
+				<label>성별 :</label>
+				<input type="radio" id="uMan" name="gender">
+				<input type="radio" id="uWoman" name="gender">
+				<br>
+				<label for="phoneNm">휴대폰 :</label>
+				<select>
+					<option>skt</option>
+					<option>kt</option>
+					<option>lgU+</option>
+				</select>
+				<select>
+					<option>010</option>
+					<option>011</option>
+					<option>012</option>
+					<option>013</option>
+					<option>014</option>
+					<option>015</option>
+					<option>016</option>
+					<option>017</option>
+					<option>018</option>
+					<option>019</option>
+				</select>
+				<input type="text" id="phoneNm">
+				<label>-</label>
+				<input type="text">
+				<br>
+				<label for="uEmail">이메일 :</label>
+				<input type="text" id="uEmail">
+				<label>@</label>
+				<select>
+					<option>선택</option>
+					<option>naver.com</option>
+					<option>hanmail.net</option>
+					<option>gmail.com</option>
+				</select>
+			</fieldset>
+		</form>
+		<form>
+			<fieldset>
+				<legend><h3>약관동의</h3></legend>
+				<br>
+				<input type="checkbox" id="service">
+				<label for="service">이용약관</label>
+				<a href="#">전체보기</a>
+				<br>
+				<input type="checkbox" id="privacy">
+				<label for="privacy">개인정보 수집 및 이용</label>
+				<a href="#">내용보기</a>
+				<hr>
+				<br>
+				<ul>
+					<li>7세 이상 14세 미만 회원은 회원가입 후 모바일에서 본인인증, 법정대리인 인증을 진행하면 서비스를 이용하실 수 있습니다.</li>
+					<li>선택약관에 동의하지 않아도 회원가입은 가능합니다.</li>
+				</ul>
+				<br>
+				<h4>약관과 개인정보 수집 및 이용을 확인하였으며 이에 동의하십니까?</h4>
+				<br>
+				<input type="submit" value="동의하고 회원가입">
+				<input type="reset" value="취소">
+			</fieldset>
+		</form>
+	</body>
+</html>

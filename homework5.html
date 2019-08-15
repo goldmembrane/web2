@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>homework5</title>
+		<link href="css/homework5.css" rel="stylesheet">
+	</head>
+	<body>
+		<form action="#">
+			<fieldset>
+				<legend>아이디찾기</legend>
+				<br>
+				<label>아이디 찾는 방법을 선택해 주세요.</label>
+				<hr>
+				<br>
+				<input type="radio" id="proofPhone" name="pf" checked>
+				<label for="proofPhone">회원정보에 등록한 휴대전화로 인증</label>
+				<br>
+				<br>
+				<label>회원정보에 등록한 휴대전화 번호와 입력한 휴대전화 번호가 같아야, 인증번호를 받을 수 있습니다.</label>
+				<br>
+				<br>
+				<label for="upname">이름</label>
+				<input type="text" id="uname">
+				<br>
+				<label for="uPhone">휴대전화</label>
+				<select>
+					<option>010</option>
+					<option>011</option>
+					<option>012</option>
+					<option>013</option>
+					<option>014</option>
+					<option>015</option>
+					<option>016</option>
+					<option>017</option>
+					<option>018</option>
+					<option>019</option>
+				</select>
+				<input type="text" id="uPhone">
+				<input type="submit" value="인증번호받기">
+				<input type="text">
+				<br>
+				<hr>
+				<br>
+				<input type="radio" id="proofEmail" name="pf">
+				<label for="proofEmail">본인확인 이메일로 인증</label>
+				<br>
+				<br>
+				<label>본인확인 이메일 주소와 입력한 이메일 주소가 같아야, 인증번호를 받을 수 있습니다.</label>
+				<br>
+				<br>
+				<label for="uename">이름</label>
+				<input type="text" id="uename">
+				<br>
+				<label for="uEmail">이메일</label>
+				<input type="text" id="uEmail">
+				<input type="submit" value="인증번호받기">
+				<input type="text">
+			</fieldset>
+		</form>
+		<form>
+			<fieldset>
+				<br>
+				<label>등록한 회원정보로 찾기 어려우시면, 본인 확인 후 아이디를 찾아드립니다.</label>
+				<br>
+				<br>
+				<input type="radio" id="idPhone" name="idPF" checked>
+				<label for="idPhone">본인 명의 휴대전화로 인증</label>
+				<hr>
+				<input type="radio" id="iPin" name="idPF">
+				<label for="iPin">아이핀 인증</label>
+			</fieldset>
+		</form>
+	</body>
+</html>
