@@ -4,20 +4,17 @@
 	list-style:none;
 	text-decoration:none;
 }
-body > #wrapper {
-	width:auto;
-	height:2000px;
-}
+body > #wrapper {}
 body > #wrapper > #inner {
-	width:1300px;
 	height:800px;
-	margin:0 auto;
-	position:relative;
 	background-color:#000;
 }
 body > #wrapper > #inner > video:first-child {
 	width:1300px;
 	height:800px;
+	margin:0 auto;
+	display:block;
+	position:relative;
 }
 body > #wrapper > #inner > .textBox {
 	position:absolute;
