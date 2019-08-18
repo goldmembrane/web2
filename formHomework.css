@@ -1,0 +1,26 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+form {
+	width:1300px;
+	margin:0 auto;
+}
+section {
+	height:35px;
+	line-height:35px;
+	text-indent:10px;
+}
+section > article{
+	background-color:#ddd;
+	width:150px;
+	float:left;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+}
+section > div {
+	float:left;
+	width:1145px;
+	border-bottom:1px solid #000;
+}
