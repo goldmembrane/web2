@@ -5,22 +5,47 @@
 }
 form {
 	width:1300px;
-	margin:0 auto;
+	margin:0px auto;
 }
-section {
-	height:35px;
+fieldset {
+	margin-bottom:10px;
+}
+article,div {
 	line-height:35px;
 	text-indent:10px;
-}
-section > article{
-	background-color:#ddd;
-	width:150px;
-	float:left;
+	border-bottom:1px solid #000;
 	border-right:1px solid #000;
-	border-bottom:1px solid #000;
 }
-section > div {
+article{
+	background-color:#ddd;
+	width:200px;
 	float:left;
-	width:1145px;
-	border-bottom:1px solid #000;
+}
+div {
+	width:1094px;
+	float:left;
+}
+p {
+	display:inline-block;
+	color:#ccc;
+	font-size:8px;
+}
+a{
+	font-size:10px;
+}
+.use article {
+	width:1295px;
+}
+.use div {
+	width:1295px;
+}
+.cost {
+	text-align:center;
+}
+.cost article {
+	background-color:#0ff;
+	width:400px;
+}
+.cost .costAll {
+	width:493px;
 }

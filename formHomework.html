@@ -9,38 +9,195 @@
 		<form>
 			<fieldset>
 				<legend>주문자/배송지 입력</legend>
-				<section>
 					<article>
-						<label for="uname"><p>주문자</p></label>
+						<label for="uname">주문자</label>
 					</article>
 					<div>
-						<input type="text" id="uname">
+						<input type="text" id="uname" autocomplete="off">
 					</div>
 					<article>
-						<label for="uname"><p>주문자</p></label>
+						<label for="address">주소</label>
 					</article>
 					<div>
-						<input type="text" id="uname">
+						<input type="text" id="address">
+						<input type="button" value="우편번호">
+						<input type="text">
+						<input type="text" placeholder="나머지 주소를 입력해주세요">
 					</div>
 					<article>
-						<label for="uname"><p>주문자</p></label>
+						<label for="phone">휴대전화</label>
 					</article>
 					<div>
-						<input type="text" id="uname">
+						<select>
+							<option>010</option>
+							<option>011</option>
+							<option>012</option>
+							<option>013</option>
+							<option>014</option>
+							<option>015</option>
+							<option>016</option>
+							<option>017</option>
+							<option>018</option>
+							<option>019</option>
+						</select>
+						<span>-</span>
+						<input type="tel" id="phone">
+						<span>-</span>
+						<input type="tel">
 					</div>
 					<article>
-						<label for="uname"><p>주문자</p></label>
+						<label for="uEmail">E-mail</label>
 					</article>
 					<div>
-						<input type="text" id="uname">
+						<input type="email" id="uEmail">
+						<p>이메일을 통해 주문처리과정을 보내드립니다. 이메일 주소란에는 반드시 수신가능한 이메일주소를 입력해주세요.</p>
 					</div>
 					<article>
-						<label for="uname"><p>주문자</p></label>
+						<label>주문조회 비밀번호</label>
 					</article>
 					<div>
-						<input type="text" id="uname">
+						<input type="password">
+						<p>주문조회시 필요합니다. 영문 대소문자, 숫자, 또는 특수문자 중 2가지 이상 조합하여 6-16자로 입력해주세요.</p>
 					</div>
-				</section>
+					<article>
+						<label>주문조회 비밀번호 확인</label>
+					</article>
+					<div>
+						<input type="password">
+					</div>
+			</fieldset>
+			<fieldset>
+				<legend>배송 정보</legend>
+				<article>
+					<label>배송지 선택</label>
+				</article>
+				<div>
+					<input type="radio" name="addressCheck">
+					<span>주문자 정보와 동일</span>
+					<input type="radio" name="addressCheck">
+					<span>새로운 배송지</span>
+				</div>
+				<article>
+					<label>받으시는 분</label>
+				</article>
+				<div>
+					<input type="text">
+				</div>
+				<article>
+					<label for="address">주소</label>
+				</article>
+				<div>
+					<input type="text" id="address">
+					<input type="button" value="우편번호">
+					<input type="text">
+					<input type="text" placeholder="나머지 주소를 입력해주세요">
+				</div>
+				<article>
+					<label for="phone">휴대전화</label>
+				</article>
+				<div>
+					<select>
+							<option>010</option>
+							<option>011</option>
+							<option>012</option>
+							<option>013</option>
+							<option>014</option>
+							<option>015</option>
+							<option>016</option>
+							<option>017</option>
+							<option>018</option>
+							<option>019</option>
+						</select>
+						<span>-</span>
+						<input type="tel" id="phone">
+						<span>-</span>
+						<input type="tel">
+				</div>
+				<article>
+					<label>배송메세지</label>
+				</article>
+				<div>
+					<input type="text" autocomplete="off">
+				</div>
+			</fieldset>
+			<fieldset class="use">
+				<article class="head">
+					<input type="checkbox">
+					<span>쇼핑몰 이용약관, 비회원 구매시 개인정보수집이용 동의에 모두 동의합니다.</span>
+				</article>
+				<div>
+					<span>쇼핑몰 이용약관</span>
+					<a href="#">전문보기</a>
+					<input type="checkbox">
+					<span>동의</span>
+				</div>
+				<div>
+					<span>비회원 구매 시 개인정보수집 이용동의</span>
+					<a href="#">전문보기</a>
+					<input type="checkbox">
+					<span>동의</span>
+				</div>
+			</fieldset>
+			<fieldset class="cost">
+				<article>
+					<span>총 주문금액</span>
+					<a href="#">내역보기<a>
+				</article>
+				<article>
+					<span>총 할인 + 부가결제 금액</span>
+				</article>
+				<article class="costAll">
+					<span>총 결제 예정 금액</span>
+				</article>
+				<div
+					<span>15,300원</span>
+				</div>
+				<div>
+					<span>0원</span>
+				</div>
+				<div class="costNmAll">
+					<span>=15,300원</span>
+				</div>
+			</fieldset>
+			<fieldset class="discount">
+				<article>
+					<span>총 할인 금액</span>
+				</article>
+				<div>
+					<span>0원</span>
+				</div>
+				<article>
+					<span>총 부가결제 금액</span>
+				</article>
+				<div>
+					<span>0원</span>
+				</div>
+			</fieldset>
+			<fieldset class="sum">
+				<legend>결제수단</legend>
+				<div>
+					<input type="radio" name="way">
+					<span>카드 결제</span>
+					<input type="radio" name="way">
+					<span>실시간 계좌이체</span>
+					<input type="radio" name="way">
+					<span>휴대폰 결제</span>
+					<input type="radio" name="way">
+					<span>무통장 입금</span>
+					<input type="radio" name="way">
+					<span>페이코</span>
+					<input type="radio" name="way">
+					<span>카카오페이</span>
+					<input type="radio" name="way">
+					<span>페이나우</span>
+				</div>
+				<article>
+					<span>카드 결제 최종결제 금액</span>
+				</article>
+				<div>
+					<span>15,300원</span>
+					<input type="button" value="결제하기">
+				</div>
 			</fieldset>
 		</form>
 	</body>
