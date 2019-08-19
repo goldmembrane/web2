@@ -3,23 +3,27 @@
 	padding:0;
 	list-style:none;
 }
+a {
+	font-size:8px;
+	line-height:30px;
+}
 form {
 	width:1300px;
 	margin:0px auto;
+	line-height:35px;
 }
 fieldset {
 	margin-bottom:10px;
 }
 article,div {
-	line-height:35px;
 	text-indent:10px;
 	border-bottom:1px solid #000;
-	border-right:1px solid #000;
 }
 article{
 	background-color:#ddd;
 	width:200px;
 	float:left;
+	border-right:1px solid #000;
 }
 div {
 	width:1094px;
@@ -29,9 +33,6 @@ p {
 	display:inline-block;
 	color:#ccc;
 	font-size:8px;
-}
-a{
-	font-size:10px;
 }
 .use article {
 	width:1295px;
@@ -49,3 +50,25 @@ a{
 .cost .costAll {
 	width:493px;
 }
+.cost div {
+	width:400px;
+	border-right:1px solid #000;
+}
+.cost .costNmAll {
+	width:493px;
+}
+.discount article {
+	background-color:#0ff;
+}
+.sum div{
+	width:1295px;
+}
+.sum article {
+	width:250px;
+	float:left;
+}
+.sum .pay {
+	width:1040px;
+	float:left;
+}
+
