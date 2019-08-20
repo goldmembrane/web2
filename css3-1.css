@@ -1,0 +1,27 @@
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+p:first-child{
+	color:#0000ff;
+}
+p:first-of-type {
+	margin-left:50px;
+}
+p:last-child {
+	background-color:#ff0000;
+}
+p:last-of-type {
+	font-weight:bold;
+}
+p:only-child {
+	font-size:50px;
+}
+p:only-of-type {
+	font-style:italic;
+}
+div:empty {
+	height:100px;
+	background-color:#000000;
+}
