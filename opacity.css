@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div {
+	width: 200px;
+	height: 200px;
+	margin-bottom: 10px;
+	border: 10px solid #ff0000;
+}
+body > div:first-child {
+	background-color: rgba(0,0,0,0.5);
+	box-sizing: border-box;
+}
+body > div:last-child {
+	background-color: #000000;
+	opacity: 1;
+	box-sizing: content-box;
+}
+body > div:first-child > p {
+	color: rgba(255,0,0,0.5);
+}
