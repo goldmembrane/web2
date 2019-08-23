@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div {
+	width: 300px;
+	height: 300px;
+}
+body > div > div {
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+body > div:first-child > div:first-child {
+	background-color: #2eff00;
+	-webkit-border-radius: 150px 0 30px 0;
+	-moz-border-radius: 150px 0 30px 0;
+	border-radius: 150px 0 30px 0;
+}
+body > div:first-child > div:nth-child(2) {
+	background-color: #9BFF84;
+	-webkit-border-radius: 0 150px 0 30px;
+	-moz-border-radius: 0 150px 0 30px;
+	border-radius: 0 150px 0 30px;
+}
+body > div:first-child > div:nth-child(3) {
+	background-color: #61FF3A;
+	-webkit-border-radius: 0 30px 0 150px;
+	-moz-border-radius: 0 30px 0 150px;
+	border-radius: 0 30px 0 150px;
+}
+body > div:first-child > div:last-child {
+	background-color: #D0FFC4;
+	-webkit-border-radius: 30px 0 150px 0;
+	-moz-border-radius: 30px 0 150px 0;
+	border-radius: 30px 0 150px 0;
+}
+body > div:nth-child(2) > div:first-child {
+	background-color: #AD60FF;
+	-webkit-border-radius: 105px 45px 0 45px;
+	-moz-border-radius: 105px 45px 0 45px;
+	border-radius: 105px 45px 0 45px;
+}
+body > div:nth-child(2) > div:nth-child(2) {
+	background-color: #8E1EFF;
+	-webkit-border-radius: 45px 105px 45px 0;
+	-moz-border-radius: 45px 105px 45px 0;
+	border-radius: 45px 105px 45px 0;
+}
+body > div:nth-child(2) > div:nth-child(3) {
+	background-color: #DCBCFF;
+	-webkit-border-radius: 45px 0 45px 105px;
+	-moz-border-radius: 45px 0 45px 105px;
+	border-radius: 45px 0 45px 105px;
+}
+body > div:nth-child(2) > div:last-child {
+	background-color: #B770FF;
+	-webkit-border-radius: 0 45px 105px 45px;
+	-moz-border-radius: 0 45px 105px 45px;
+	border-radius: 0 45px 105px 45px;
+}
+body > div:last-child > div:first-child {
+	background-color: #84FFFF;
+	-webkit-border-radius: 20px 100px 20px 100px;
+	-moz-border-radius: 20px 100px 20px 100px;
+	border-radius: 20px 100px 20px 100px;
+}
+body > div:last-child > div:nth-child(2) {
+	background-color: #ADFFFF;
+	-webkit-border-radius: 100px 20px 100px 20px;
+	-moz-border-radius: 100px 20px 100px 20px;
+	border-radius: 100px 20px 100px 20px;
+}
+body > div:last-child > div:nth-child(3) {
+	background-color: #38FFFF;
+	-webkit-border-radius: 100px 20px 100px 20px;
+	-moz-border-radius: 100px 20px 100px 20px;
+	border-radius: 100px 20px 100px 20px;
+}
+body > div:last-child > div:last-child {
+	background-color: #59FFFF;
+	-webkit-border-radius: 20px 100px 20px 100px;
+	-moz-border-radius: 20px 100px 20px 100px;
+	border-radius: 20px 100px 20px 100px;
+}
