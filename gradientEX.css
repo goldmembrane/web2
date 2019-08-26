@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div {
+	width: 880px;
+	margin: 0 auto;
+}
+body >  div >  div {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+}
+body > div:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+body > div > div:first-child {
+	-webkit-border-radius: 120px 15px 120px 35px;
+	-moz-border-radius: 120px 15px 120px 35px;
+	border-radius: 120px 15px 120px 35px;
+	background-image: -webkit-radial-gradient(circle at 40px 40px, #9f0, #040);
+	background-image: -moz-radial-gradient(circle at 40px 40px, #9f0, #040);
+	background-image: -ms-radial-gradient(circle at 40px 40px, #9f0, #040);
+	background-image: -o-radial-gradient(circle at 40px 40px, #9f0, #040);
+	background-image: radial-gradient(circle at 40px 40px, #9f0, #040);
+}
+body > div > div:nth-child(2) {
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	background-image: -webkit-radial-gradient(circle farthest-corner at 60px 40px, #ff0 20px, #f00);
+	background-image: -moz-radial-gradient(circle farthest-corner at 60px 40px, #ff0 20px, #f00);
+	background-image: -ms-radial-gradient(circle farthest-corner at 60px 40px, #ff0 20px, #f00);
+	background-image: -o-radial-gradient(circle farthest-corner at 60px 40px, #ff0 20px, #f00);
+	background-image: radial-gradient(circle farthest-corner at 60px 40px, #ff0 20px, #f00);
+}
+body > div > div:nth-child(3) {
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	background-image: -webkit-radial-gradient(circle farthest-corner at 60px 40px, #ff0, #f80 180px, #a70);
+	background-image: -moz-radial-gradient(circle farthest-corner at 60px 40px, #ff0, #f80 180px, #a70);
+	background-image: -ms-radial-gradient(circle farthest-corner at 60px 40px, #ff0, #f80 180px, #a70);
+	background-image: -o-radial-gradient(circle farthest-corner at 60px 40px, #ff0, #f80 180px, #a70);
+	background-image: radial-gradient(circle farthest-corner at 60px 40px, #ff0, #f80 180px, #a70);
+}
+body > div > div:last-child {
+	-webkit-border-radius: 20px 130px 40px 110px;
+	-moz-border-radius: 20px 130px 40px 110px;
+	border-radius: 20px 130px 40px 110px;
+	background-image: -webkit-radial-gradient(circle at 20px 20px, #ff0, #f80);
+	background-image: -moz-radial-gradient(circle at 20px 20px, #ff0, #f80);
+	background-image: -ms-radial-gradient(circle at 20px 20px, #ff0, #f80);
+	background-image: -o-radial-gradient(circle at 20px 20px, #ff0, #f80);
+	background-image: radial-gradient(circle at 20px 20px, #ff0, #f80);
+}
