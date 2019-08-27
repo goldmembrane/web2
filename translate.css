@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body > div {
+	padding: 100px;
+	height: 300px;
+	background-color: #000;
+}
+body > div > div {
+	width: 100px;
+	height: 100px;
+}
+body > div > div:first-child {
+	background-color: #ff0;
+	-webkit-transform: translateX(100px);
+	-ms-transform: translateX(100px);
+	transform: translateX(100px);
+}
+body > div > div:last-child {
+	background-color: #f00;
+	margin-top: 100px;
+}
+body > div:hover > div:first-child {
+	-webkit-transform: translateX(100px) scaleX(2);
+	-ms-transform: translateX(100px) scaleX(2);
+	transform: translateX(100px) scaleX(2);
+}

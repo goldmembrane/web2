@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div {
+	width: 100px;
+	height: 100px;
+	margin: 100px;
+}
+div:first-child {
+	background-color: #ff0000;
+	transform: rotate(45deg) skew(20deg,20deg);
+}
+div:last-child {
+	background-color: #000;
+}
