@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div {
+	width: 100px;
+	height: 100px;
+	background-color: #000;
+	margin-bottom: 10px;
+}
+div:first-child {
+	-webkit-transition-property: background-color,width;
+	-ms-transition-property: background-color,width;
+	transition-property: background-color,width;
+	-webkit-transition-duration: 3s,1s;
+	-ms-transition-duration: 3s,1s;
+	transition-duration: 3s,1s;
+	-webkit-transition-timing-function: linear,ease;
+	-ms-transition-timing-function: linear,ease;
+	transition-timing-function: linear,ease;
+	-webkit-transition-delay: 1s,5s;
+	-ms-transition-delay: 1s,5s;
+	transition-delay: 1s,5s;
+}
+div:first-child:hover {
+	width: 200px;
+	height: 50px;
+	background-color: #f00;
+}
+div:last-child {
+	-webkit-transition: all 0.5s ease; 
+	-ms-transition: all 0.5s ease; 
+	transition: all 0.5s ease; 
+}
+div:last-child:active {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}

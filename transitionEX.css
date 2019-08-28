@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div {
+	text-align: center;
+	margin-top: 100px;
+}
+ul, li {
+	display: inline-block;
+}
+a {
+	display: block;
+	width: 100px;
+	height: 50px;
+	text-decoration: none;
+	color: #000;
+	line-height: 50px;
+	overflow: hidden;
+	position: relative;
+}
+div:first-child ul li a:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	-webkit-transform: translateY(-51px);
+	-ms-transform: translateY(-51px);
+	transform: translateY(-51px);
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+div:first-child ul li a:hover:before {
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+div:nth-child(2) ul li a:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	-webkit-transform: translateY(51px);
+	-ms-transform: translateY(51px);
+	transform: translateY(51px);
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+div:nth-child(2) ul li a:hover:before {
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+div:nth-child(3) ul li a:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	-webkit-transform: translateX(-101px);
+	-ms-transform: translateX(-101px);
+	transform: translateX(-101px);
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+div:nth-child(3) ul li a:hover:before {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+div:last-child ul li a:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	-webkit-transform: translateX(101px);
+	-ms-transform: translateX(101px);
+	transform: translateX(101px);
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+div:last-child ul li a:hover:before {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+li:first-child a:before {
+	content: "Menu 1";
+}
+li:nth-child(2) a:before {
+	content: "Menu 2";
+}
+li:nth-child(3) a:before {
+	content: "Menu 3";
+}
+li:last-child a:before {
+	content: "Menu 4";
+}
