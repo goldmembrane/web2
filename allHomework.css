@@ -35,35 +35,74 @@ section > a {
 	-webkit-box-shadow: 2px 2px 20px 0 #000;
 	box-shadow: 2px 2px 20px 0 #000;
 	position: relative;
-	margin-bottom: 200px;
+	margin-bottom: 180px;
+	overflow: hidden;
 }
 section a div:first-child {
-	width: 30px;
+	width: 60px;
 	height: 60px;
-	background-image: -webkit-linear-gradient(90deg,rgba(0,0,0,0) 10px, #ffffff);
-	background-image: -moz-linear-gradient(90deg,rgba(0,0,0,0) 10px, #ffffff);
-	background-image: -ms-linear-gradient(90deg,rgba(0,0,0,0) 10px, #ffffff);
-	background-image: -o-linear-gradient(90deg,rgba(0,0,0,0) 10px, #ffffff);
-	background-image: linear-gradient(90deg,rgba(0,0,0,0) 10px, #ffffff);
+	background-image: -webkit-linear-gradient(90deg, rgba(0,0,0,0.1) 5px, #fff 30px, rgba(0,0,0,0.1));
+	background-image: -moz-linear-gradient(90deg, rgba(0,0,0,0.1) 5px, #fff 30px, rgba(0,0,0,0.1));
+	background-image: -ms-linear-gradient(90deg, rgba(0,0,0,0.1) 5px, #fff 30px, rgba(0,0,0,0.1));
+	background-image: -o-linear-gradient(90deg, rgba(0,0,0,0.1) 5px, #fff 30px, rgba(0,0,0,0.1));
+	background-image: linear-gradient(90deg, rgba(0,0,0,0.1) 5px, #fff 30px, rgba(0,0,0,0.1));
 	position: absolute;
 	left: 0;
 	top: 0;
+	transform: skewX(-30deg);
+	opacity: 0.3;
+	-webkit-animation-name: moveRight;
+	-moz-animation-name: moveRight;
+	-o-animation-name: moveRight;
+	animation-name: moveRight;
+	-webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	-o-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-timing-function: ease;
+	-moz-animation-timing-function: ease;
+	-o-animation-timing-function: ease;
+	animation-timing-function: ease;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-moz-animation-direction: normal;
+	-o-animation-direction: normal;
+	animation-direction: normal;
 }
-section a div:nth-child(2) {
-	width: 30px;
-	height: 60px;
-	background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0) 10px, #ffffff);
-	background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0) 10px, #ffffff);
-	background-image: -ms-linear-gradient(270deg,rgba(0,0,0,0) 10px, #ffffff);
-	background-image: -o-linear-gradient(270deg,rgba(0,0,0,0) 10px, #ffffff);
-	background-image: linear-gradient(270deg,rgba(0,0,0,0) 10px, #ffffff);
-	position: absolute;
-	left: 30px;
-	top: 0;
+@-webkit-keyframes moveRight {
+	to {
+		-webkit-transform: translateX(240px) skewX(-30deg);
+		-ms-transform: translateX(240px) skewX(-30deg);
+		transform: translateX(240px) skewX(-30deg);
+	}
+}
+@-moz-keyframes moveRight {
+	to {
+		-webkit-transform: translateX(240px) skewX(-30deg);
+		-ms-transform: translateX(240px) skewX(-30deg);
+		transform: translateX(240px) skewX(-30deg);
+	}
+}
+@-o-keyframes moveRight {
+	to {
+		-webkit-transform: translateX(240px) skewX(-30deg);
+		-ms-transform: translateX(240px) skewX(-30deg);
+		transform: translateX(240px) skewX(-30deg);
+	}
+}
+@keyframes moveRight {
+	to {
+		-webkit-transform: translateX(240px) skewX(-30deg);
+		-ms-transform: translateX(240px) skewX(-30deg);
+		transform: translateX(240px) skewX(-30deg);
+	}
 }
 section article {
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	background: url(../img/double-arrow.png) no-repeat;
 	background-size: 100%;
 	display: block;
@@ -71,9 +110,57 @@ section article {
 	-webkit-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
 	transform: rotate(90deg);
+	-webkit-animation-name: moveDown;
+	-moz-animation-name: moveDown;
+	-o-animation-name: moveDown;
+	animation-name: moveDown;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	-moz-animation-timing-function: ease;
+	-o-animation-timing-function: ease;
+	animation-timing-function: ease;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-moz-animation-direction: normal;
+	-o-animation-direction: normal;
+	animation-direction: normal;
 }
 section article a {
 	display: block;
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
+}
+@-webkit-keyframes moveDown {
+	to {
+		-webkit-transform: translateY(60px) rotate(90deg);
+		-ms-transform: translateY(60px) rotate(90deg);
+		transform: translateY(60px) rotate(90deg);
+	}
+}
+@-moz-keyframes moveDown {
+	to {
+		-webkit-transform: translateY(60px) rotate(90deg);
+		-ms-transform: translateY(60px) rotate(90deg);
+		transform: translateY(60px) rotate(90deg);
+	}
+}
+@-o-keyframes moveDown {
+	to {
+		-webkit-transform: translateY(60px) rotate(90deg);
+		-ms-transform: translateY(60px) rotate(90deg);
+		transform: translateY(60px) rotate(90deg);
+	}
+}
+@keyframes moveDown {
+	to {
+		-webkit-transform: translateY(60px) rotate(90deg);
+		-ms-transform: translateY(60px) rotate(90deg);
+		transform: translateY(60px) rotate(90deg);
+	}
 }

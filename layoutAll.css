@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#wrapper > div {
+	height: 25px;
+	background-color: #00F2E2;
+}
+header {
+	height: 100px;
+	background-color: #0086F4;
+}
+#headerInner {
+	width: 1280px;
+	height: 74px;
+	border-bottom: 1px solid #fff;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+#headerInner > article {
+	width: 200px;
+	height: 50px;
+	background-color: #fff;
+	float: left;
+}
+section {
+	height: 400px;
+	background-color: #0086F4;
+}
