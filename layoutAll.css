@@ -3,7 +3,7 @@
 	padding: 0;
 	list-style: none;
 }
-#wrapper > div {
+#wrapper > article {
 	height: 25px;
 	background-color: #00F2E2;
 }
@@ -13,18 +13,286 @@ header {
 }
 #headerInner {
 	width: 1280px;
-	height: 74px;
+	height: 100px;
 	border-bottom: 1px solid #fff;
 	margin: 0 auto;
+	box-sizing: border-box;
 	padding-top: 25px;
 }
-#headerInner > article {
+#headerInner article {
 	width: 200px;
 	height: 50px;
 	background-color: #fff;
 	float: left;
+	border: 2px solid #00F4FC;
+	box-sizing: border-box;
 }
-section {
+#headerInner > ul {
+	text-align: right;
+}
+#headerInner > ul li {
+	display: inline-block;
+	width: 50px;
+	height: 20px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 20px;
+}
+nav ul {
+	text-align: right;
+}
+nav ul li {
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 10px;
+}
+nav ul li:last-child {
+	background-color: #00B9ED;
+}
+#wrapper > section:first-of-type {
 	height: 400px;
 	background-color: #0086F4;
+}
+#wrapper > section:first-of-type > article {
+	width: 1280px;
+	height: 380px;
+	margin: 0 auto;
+	padding-top: 20px;
+	position: relative;
+}
+#wrapper > section:first-of-type > article article:first-child {
+	width: 700px;
+	height: 250px;
+	background-color: #fff;
+}
+#wrapper > section:first-of-type > article article:last-child {
+	width: 400px;
+	height: 100px;
+	background-color: #00E8F4;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#wrapper > section:nth-of-type(2) {
+	height: 900px;
+	position: relative;
+}
+#wrapper > section:nth-of-type(2) > article:first-child {
+	width: 700px;
+	height: 300px;
+	background-color: #2828CD;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+#containerInner {
+	width: 1280px;
+	height: 900px;
+	margin: 0 auto;
+}
+#containerInner > article {
+	width: 640px;
+	height: 900px;
+	display: inline-block;
+	margin-right: -5px;
+}
+#containerInner > article:first-child > article:first-child {
+	height: 380px;
+	background-color: #B9E2FA;
+	padding: 20px 0 0 20px;
+}
+#containerInner > article:first-child > article:first-child article {
+	width: 400px;
+	height: 80px;
+	background-color: #fff;
+}
+#containerInner > article:first-child > article:last-child {
+	height: 210px;
+	background-color: #3CC2FF;
+	padding-top: 290px;
+}
+#containerInner > article:first-child > article:last-child article {
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	margin-left: -25px;
+}
+#containerInner > article:first-child > article:last-child article:first-child {
+	margin-bottom: 20px;
+}
+#containerInner > article:last-child > article:first-child {
+	height: 480px;
+	background-color: #00008C;
+	padding: 20px 0 0 20px;
+}
+#containerInner > article:last-child > article:first-child article{
+	width: 400px;
+	height: 80px;
+	background-color: #fff;
+}
+#containerInner > article:last-child > article:last-child {
+	height: 380px;
+	background-color: #000069;
+	padding: 20px 0 0 20px;
+}
+#containerInner > article:last-child > article:last-child article {
+	width: 400px;
+	height: 80px;
+	background-color: #fff;
+}
+#wrapper > section:nth-of-type(3) {
+	height: 1100px;
+}
+#wrapper > section:nth-of-type(3) > section:first-child {
+	height: 350px;
+	background-color: #B9E2FA;
+	padding-top: 50px;
+}
+#wrapper > section:nth-of-type(3) > section:first-child > article {
+	width: 1280px;
+	height: 400px;
+	margin: 0 auto;
+}
+#wrapper > section:nth-of-type(3) > section:first-child > article article {
+	width: 700px;
+	height: 250px;
+	background-color: #fff;
+}
+#wrapper > section:nth-of-type(3) > section:last-child {
+	height: 700px;
+	background-color: #00008C;
+}
+#wrapper > section:nth-of-type(3) > section:last-child > article {
+	width: 1280px;
+	height: 550px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 150px;
+}
+#wrapper > section:nth-of-type(3) > section:last-child > article > article:first-child {
+	width: 1280px;
+	height: 150px;
+	background-color: #3CC2FF;
+	position: absolute;
+	left: 0;
+	top: -50px;
+}
+#wrapper > section:nth-of-type(3) > section:last-child > article > article:last-child {
+	width: 700px;
+	height: 250px;
+	background-color: #fff;
+}
+footer {
+	height: 100px;
+	background-color: #000069;
+}
+footer > article {
+	width: 1280px;
+	height: 75px;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+footer > article > article {
+	width: 400px;
+	height: 50px;
+	background-color: #00008C;
+	float: left;
+	position: relative;
+}
+footer > article > article article {
+	width: 120px;
+	height: 50px;
+	background-color: #3CC2FF;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+footer > article > ul {
+	text-align: right;
+}
+footer > article > ul li {
+	display: inline-block;
+}
+footer > article > ul li article {
+	width: 50px;
+	height: 50px;
+	background-color: #00008C;
+	border-radius: 50px;
+}
+#wrapper > section:nth-of-type(4) {
+	height: 400px;
+	background-color: #000069;
+}
+#wrapper > section:nth-of-type(4) > article {
+	width: 1280px;
+	height: 400px;
+	margin: 0 auto;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	box-sizing: border-box;
+}
+#wrapper > section:nth-of-type(4) > article ul {
+	float: left;
+	margin-right: 255px;
+	margin-top: 50px;
+}
+#wrapper > section:nth-of-type(4) > article ul li {
+	width: 60px;
+	height: 30px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+#wrapper > section:nth-of-type(4) > article ul li:first-of-type {
+	width: 65px;
+	font-size: 23px;
+}
+#wrapper > section:nth-of-type(4) > article ul:first-child > li:nth-child(3),#wrapper > section:nth-of-type(4) > article ul:first-child > li:last-child {
+	background-color: #3CC2FF;
+}
+#wrapper > section:nth-of-type(4) > article ul:nth-child(2) li,#wrapper > section:nth-of-type(4) > article ul:nth-child(3) li {
+	background-color: #777;
+}
+#wrapper > section:nth-of-type(4) > article ul:nth-child(2) li:first-child,#wrapper > section:nth-of-type(4) > article ul:nth-child(3) li:first-child {
+	background-color: #fff;
+}
+#wrapper > section:nth-of-type(4) > article > ul:last-child li:nth-child(4) {
+	background-color: #777;
+}
+#wrapper > section:nth-of-type(4) > article > ul:last-child li:last-child {
+	background-color: #3CC2FF;
+}
+#wrapper > section:last-of-type {
+	height: 60px;
+	background-color: #000069;
+}
+#wrapper > section:last-of-type > article {
+	width: 1280px;
+	height: 50px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+#wrapper > section:last-of-type > article article {
+	width: 450px;
+	height: 30px;
+	float: left;
+	background-color: #777;
+}
+#wrapper > section:last-of-type > article > ul {
+	text-align: right;
+}
+#wrapper > section:last-of-type > article ul li {
+	text-align: center;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	display: inline-block;
+	margin-left: 30px;
 }
