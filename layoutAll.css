@@ -97,8 +97,14 @@ nav ul li a span{
 	display: block;
 	width: 0px;
 	height: 2px;
+	-webkit-transition-property: width;
+	-ms-transition-property: width;
 	transition-property: width;
+	-webkit-transition-duration: 0.5s;
+	-ms-transition-duration: 0.5s;
 	transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease;
+	-ms-transition-timing-function: ease;
 	transition-timing-function: ease;
 }
 nav ul li:first-of-type:hover a span {
@@ -217,39 +223,88 @@ nav ul li:last-child:hover a {
 	right: 0;
 	bottom: 0;
 	padding-top: 25px;
+	-webkit-transition-property: background-color;
+	-ms-transition-property: background-color;
+	transition-property: background-color;
+	-webkit-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+	-ms-transition-timing-function: ease;
+	transition-timing-function: ease;
 }
 #good > section > article a article:hover {
 	background-color: #fff;
 }
-#good > section > article a article figure:first-child img {
+#good > section > article a article figure:first-of-type img {
 	width: 40px;
-	margin:0 20px 0 25px;
+	margin: 0 20px 0 25px;
 	float: left;
 }
-#good > section > article a article figure:nth-child(2) img {
+#good > section > article a article figure:nth-of-type(2) img {
 	width: 40px;
-	margin-top: 20px;
+	margin: 0 20px 0 -60px;
 	float: left;
+	display: none;
+}
+#good > section > article a article:hover figure:nth-of-type(2) img {
+	display: block;
 }
 #good > section > article a article div {
 	width: 150px;
 	height: 50px;
 	border-right: 1px solid #fff;
 	float: left;
+	-webkit-transition-property: border;
+	-ms-transition-property: border;
+	transition-property: border;
+	-webkit-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+	-ms-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+#good > section > article a article:hover div {
+	border-right: 1px solid #00E8F4;
 }
 #good > section > article a article div span {
 	color: #fff;
 	line-height: 50px;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
+	-webkit-transition-property: color;
+	-ms-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+	-ms-transition-timing-function: ease;
+	transition-timing-function: ease;
 }
-#good > section > article a article figure:last-child {
+#good > section > article a article:hover div span {
+	color: #00E8F4;
+}
+#good > section > article a article figure:nth-of-type(3) {
 	width: 30px;
 	float: right;
 	margin: 10px 20px 0 0;
 }
-#good > section > article a article figure:last-child img {
+#good > section > article a article figure:nth-of-type(3) img {
 	width: 30px;
+}
+#good > section > article a article figure:last-of-type img{
+	width: 30px;
+	float: right;
+	margin: 10px -30px 0 0;
+	display: none;
+}
+#good > section > article a article:hover figure:last-of-type img {
+	display: block;
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 #wrapper > section:first-of-type {
 	position: relative;
@@ -349,8 +404,8 @@ article:hover figure img {
 	float: right;
 	position: relative;
 }
-#containerInner > article:nth-child(2) > article:first-child {
-	width: 250px;
+#containerInner > article:nth-child(2) > article:first-child  {
+	width: 200px;
 	height: 50px;
 	position: absolute;
 	left: -60px;
@@ -361,14 +416,31 @@ article:hover figure img {
 }
 #containerInner > article:nth-child(2) > article:first-child a article {
 	width: 90px;
-	border: 1px solid #00E8F4;
-	float: left;
+	height: 2px;
+	background-color: #00E8F4;
 	margin: 24px 10px 0 0;
+	display: inline-block;
+	-webkit-transition-property: width;
+	-ms-transition-property: width;
+	transition-property: width;
+	-webkit-transition-duration: 0.2s;
+	-ms-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease;
+	-ms-transition-timing-function: ease;
+	transition-timing-function: ease;
 }
 #containerInner > article:nth-child(2) > article:first-child a span {
 	color: #00E8F4;
 	line-height: 50px;
 	font-family: 'Roboto', sans-serif;
+	float: right;
+}
+#containerInner > article:nth-child(2) > article:first-child:hover a span{
+	color: #fff;
+}
+#containerInner > article:nth-child(2) > article:first-child:hover a article {
+	width: 0px;
 }
 #containerInner > article:nth-child(2) > article:last-child p:first-child {
 	color: #fff;
@@ -565,8 +637,9 @@ article:hover figure img {
 }
 #wrapper > section:nth-of-type(2) > section:last-of-type > article > article:first-child blockquote {
 	color: #fff;
-	font-size: 28px;
+	font-size: 30px;
 	font-family: 'Playfair Display', serif;
+	font-style: italic;
 }
 #wrapper > section:nth-of-type(2) > section:last-of-type > article > article:first-child > div:last-of-type {
 	width: 200px;
@@ -682,8 +755,10 @@ footer > article > article article {
 	-ms-transition-timing-function: ease,ease;
 	transition-timing-function: ease,ease;
 }
-footer > article > article article:hover,footer > article > article article:hover p {
+footer > article > article article:hover {
 	background-color: #fff;
+}
+footer > article > article article:hover p {
 	color: #3CC2FF;
 }
 footer > article > article article p {
