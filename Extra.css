@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div[class] {
+	height: 200px;
+	background-color: #f00;
+}
+div[class="box"] {
+	width: 200px;
+}
+div[class~="abc"] {
+	border: 5px solid #000;
+}
+div[class^="b"] {
+	margin: 10px;
+}
+div[class$="c"] {
+	padding: 50px;
+}
+div+h1 {
+	font-size: 100px;
+}
