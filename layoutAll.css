@@ -178,8 +178,6 @@ nav ul li:last-child:hover a {
 #good > section > article > article div {
 	width: 130px;
 	height: 35px;
-	border-bottom: 1px solid #00E8F4;
-	box-sizing: border-box;
 	text-align: center;
 	margin-top: 50px;
 	-webkit-transition-property: color;
@@ -190,9 +188,15 @@ nav ul li:last-child:hover a {
 	transition-duration: 0.2s;
 	-webkit-transition-timing-function: ease;-ms-transition-timing-function: ease;
 	transition-timing-function: ease;
-}
-#good > section > article > article div:hover {
-	border-bottom:1px solid #fff;
+	-webkit-transition-property: background-color;
+	-ms-transition-property: background-color;
+	transition-property: background-color;
+	-webkit-transition-duration: 0.2s;
+	-ms-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease;
+	-ms-transition-timing-function: ease;
+	transition-timing-function: ease;
 }
 #good > section > article > article div:hover a {
 	color: #fff;
@@ -202,6 +206,16 @@ nav ul li:last-child:hover a {
 	text-decoration: none;
 	font-size: 22px;
 	font-family: 'Roboto', sans-serif;
+}
+#good > section article > article div span {
+	width: 130px;
+	height: 1px;
+	background-color: #00E8F4;
+	margin-top: 15px;
+	display: block;
+}
+#good > section article > article div:hover span {
+	background-color: #fff;
 }
 #good > section > article > article article {
 	margin-top: 50px;
@@ -509,8 +523,6 @@ article:hover figure img {
 #containerInner > article:last-child article div {
 	width: 130px;
 	height: 35px;
-	border-bottom: 1px solid #00E8F4;
-	box-sizing: border-box;
 	text-align: center;
 	margin: 50px;
 	-webkit-transition-property: color;
@@ -521,9 +533,15 @@ article:hover figure img {
 	transition-duration: 0.2s;
 	-webkit-transition-timing-function: ease;-ms-transition-timing-function: ease;
 	transition-timing-function: ease;
-}
-#containerInner > article:last-child article div:hover {
-	border-bottom: 1px solid #fff;
+	-webkit-transition-property: background-color;
+	-ms-transition-property: background-color;
+	transition-property: background-color;
+	-webkit-transition-duration: 0.2s;
+	-ms-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease;
+	-ms-transition-timing-function: ease;
+	transition-timing-function: ease;
 }
 #containerInner > article:last-child article div a {
 	color: #00E8F4;
@@ -533,6 +551,16 @@ article:hover figure img {
 }
 #containerInner > article:last-child article div:hover a {
 	color: #fff;
+}
+#containerInner > article:last-child article div span {
+	width: 130px;
+	height: 1px;
+	background-color: #00E8F4;
+	display: block;
+	margin-top: 15px;
+}
+#containerInner > article:last-child article div:hover span {
+	background-color: #fff;
 }
 #wrapper > section:nth-of-type(2) > section:first-child {
 	background: url(../img/img_obj.jpg) no-repeat;
